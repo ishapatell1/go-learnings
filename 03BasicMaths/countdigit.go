@@ -4,8 +4,6 @@ import (
 	"fmt"
     // "strconv"
 )
-
-
 func countdigit(n int){
     number :=n
     if n ==0 {

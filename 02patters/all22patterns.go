@@ -3,24 +3,57 @@ package main
 import "fmt"
 func main(){
 	fmt.Println("This is list of patterns printed using go")
-	// rectangle(5)
-	// pattern02(6)
-	// pattern03(5)
-	// pattern04(5)
-	// pattern05(5)
-	// pattern06(5)
-	// pattern07(5)
-	//pattern08(5)
-	//pattern09()
-	// pattern10(5)
-	//pattern11(5)
-	// pattern12(5)
-	// pattern13(5)
-	//pattern14(5)
-	//pattern15(5)
+	rectangle(5)
+	pattern02(6)
+	pattern03(5)
+	pattern04(5)
+	pattern05(5)
+	pattern06(5)
+	pattern07(5)
+	pattern08(5)
+	pattern09()
+	pattern10(5)
+	pattern11(5)
+	pattern12(5)
+	pattern13(5)
+	pattern14(5)
+	pattern15(5)
 	pattern16(5)
+	pattern17(2)
+	pattern18(8)
+	printNumberAsTriangle()
+	printRectangle()
+	printTriangle()
 
-
+}
+func printRectangle(){
+	N:=3
+	for i:=0;i<N; i++ {
+		for j:=0; j<N;j++{
+			fmt.Print("*")
+		}
+		fmt.Println()
+	}
+}
+//Print Triangle
+func printTriangle(){
+	N:=5
+	for i:=0; i<N;i++{
+		for j:=0; j<=i; j++{
+			fmt.Print("*")
+		}
+		fmt.Println()
+	}
+}
+//Print Numbers as Triangle
+func printNumberAsTriangle(){
+	N:=5
+	for i:=1; i<=N; i++{
+		for j:=1; j<=i;j++{
+			fmt.Print(j)
+		}
+		fmt.Println()
+	}
 }
 func rectangle(n int){
 	for i:=0; i<n; i++{
@@ -201,7 +234,7 @@ func pattern18(n int){
 	for i:=n; i<=1;i++{
 		char := 'E'-1
 		for j:=i;j<i;j++{
-			fmt.Print("%c", char)
+			fmt.Printf("%c", char)
 		}
 	}	
 }
